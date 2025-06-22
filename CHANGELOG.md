@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+## [2.12.1] - 2025-06-23
+
+### Fixed
+
+- `figure` shortcode would load recursively when using the `default` paramater ([#1074](https://github.com/jpanther/congo/issues/1074))
+- Some partials not loading due to incorrect file paths ([#1075](https://github.com/jpanther/congo/pull/1075))
+
 ## [2.12.0] - 2025-06-22
 
 ### Added
@@ -17,7 +24,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Changed
 
 - ⚠️ Required Hugo version is now 0.146.0 or later
-- Layouts directory restructured to align with [new Hugo templating data structure](https://github.com/gohugoio/hugo/pull/13541#issue-2959000250)
+- Layouts directory restructured to align with [new Hugo templating data structure](https://gohugo.io/templates/new-templatesystem-overview/)
 - Absolute URLs are now preferred over relative URLs
 - Upgrade to Mermaid v11.7.0 ([#1035](https://github.com/jpanther/congo/pull/1035), [#1040](https://github.com/jpanther/congo/pull/1040))
 - Upgrade to KaTeX v0.16.22 ([#1048](https://github.com/jpanther/congo/pull/1048))
@@ -979,7 +986,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Advanced customisation using simple Tailwind colour definitions and styles
 - Fully documented
 
-[Unreleased]: https://github.com/jpanther/congo/compare/v2.12.0...HEAD
+[Unreleased]: https://github.com/jpanther/congo/compare/v2.12.1...HEAD
+[2.12.1]: https://github.com/jpanther/congo/compare/v2.12.0...v2.12.1
 [2.12.0]: https://github.com/jpanther/congo/compare/v2.11.0...v2.12.0
 [2.11.0]: https://github.com/jpanther/congo/compare/v2.10.0...v2.11.0
 [2.10.0]: https://github.com/jpanther/congo/compare/v2.9.0...v2.10.0
